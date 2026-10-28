@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#08090b">
+<title>BLACK CITY RP | قوانين المدينة</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
+:root{--bg:#08090b;--panel:#111317;--panel2:#171a20;--red:#e63946;--red2:#ff5964;--text:#f5f5f6;--muted:#a6aab3;--line:#292d35}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#321116 0,transparent 32%),var(--bg);color:var(--text);font-family:'Cairo',sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1150px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:#090a0ddd;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff12}
+.navin{height:76px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:1px}.logo{display:grid;place-items:center;width:43px;height:43px;background:linear-gradient(135deg,var(--red),#79151f);border-radius:12px;box-shadow:0 0 25px #e6394630;font-size:20px}.brand span{display:block;color:var(--red2);font-size:11px;letter-spacing:3px;margin-top:-5px}.navlinks{display:flex;gap:20px;color:#d5d6da;font-size:14px}.navlinks a:hover{color:var(--red2)}
+.menu{display:none;background:var(--panel2);border:1px solid var(--line);color:white;padding:9px 12px;border-radius:10px}
+.hero{min-height:570px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:32px;padding:65px 0}.eyebrow{display:inline-flex;gap:9px;align-items:center;color:#ff8b93;background:#e6394615;border:1px solid #e639463d;border-radius:99px;padding:7px 13px;font-size:12px;font-weight:800}.dot{width:7px;height:7px;background:var(--red2);border-radius:50%;box-shadow:0 0 12px var(--red)}h1{font-size:clamp(42px,7vw,76px);line-height:1.05;margin:20px 0 12px;font-weight:900;letter-spacing:-2px}h1 em{font-style:normal;color:var(--red2)}.hero p{color:var(--muted);font-size:17px;line-height:1.9;max-width:600px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border-radius:12px;font-weight:800;transition:.2s;border:1px solid var(--line)}.btn:hover{transform:translateY(-3px)}.primary{background:linear-gradient(135deg,var(--red),#a51d29);border-color:transparent;box-shadow:0 9px 28px #e6394628}.secondary{background:#ffffff08}.heroart{height:390px;position:relative;display:grid;place-items:center}.ring{position:absolute;width:310px;height:310px;border:1px solid #e6394650;border-radius:50%;box-shadow:0 0 90px #e6394618,inset 0 0 60px #e639460b}.ring:before,.ring:after{content:"";position:absolute;inset:25px;border:1px dashed #e6394650;border-radius:50%}.ring:after{inset:-20px;border-color:#ffffff12}.citymark{position:relative;text-align:center;z-index:1}.citymark .skull{font-size:120px;filter:drop-shadow(0 0 30px #e6394640)}.citymark strong{display:block;font-size:29px;letter-spacing:3px}.citymark small{color:var(--red2);letter-spacing:6px;font-weight:800}.floating{position:absolute;background:#17191fdd;border:1px solid #ffffff15;padding:11px 15px;border-radius:12px;font-size:12px;color:#d8d9de;box-shadow:0 10px 30px #0005}.f1{top:36px;right:0}.f2{bottom:36px;left:0}.section{padding:62px 0}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:25px}.sectionhead h2{font-size:clamp(26px,4vw,38px);margin:0;font-weight:900}.sectionhead p{color:var(--muted);margin:7px 0 0}.count{color:var(--red2);font-size:13px;font-weight:800}.tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}.search{flex:1;min-width:220px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:13px 15px;color:white;font:inherit;outline:none}.search:focus{border-color:#e6394680}.filter{background:var(--panel);border:1px solid var(--line);color:#ddd;padding:10px 15px;border-radius:11px;font:inherit;cursor:pointer}.filter.active,.filter:hover{background:#e6394619;border-color:#e6394677;color:#ff8b93}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:linear-gradient(145deg,#15171c,#101115);border:1px solid var(--line);border-radius:17px;padding:19px;transition:.22s;min-height:175px}.card:hover{transform:translateY(-4px);border-color:#e6394666;box-shadow:0 12px 30px #0003}.cardtop{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}.tag{font-size:10px;color:#ff8b93;background:#e6394618;border:1px solid #e6394630;border-radius:6px;padding:4px 7px;font-weight:800}.card h3{font-size:17px;margin:0;font-weight:900}.card p{font-size:13px;line-height:1.85;color:#b7bac2;margin:0}.termgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.term{display:flex;align-items:center;gap:14px;background:var(--panel);border:1px solid var(--line);padding:15px;border-radius:14px}.termicon{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:#e6394617;font-size:20px;flex-shrink:0}.term strong{display:block;font-size:14px}.term span{display:block;color:var(--muted);font-size:13px;margin-top:3px}.notice{display:flex;gap:14px;align-items:flex-start;background:linear-gradient(110deg,#e639461a,#171317);border:1px solid #e639463d;border-radius:17px;padding:20px;margin-top:22px}.notice b{display:block;margin-bottom:4px}.notice p{margin:0;color:#c3c4cb;font-size:13px;line-height:1.8}.join{padding:48px 25px;text-align:center;background:radial-gradient(circle at 50% 0,#e6394625,transparent 65%),var(--panel);border:1px solid #e6394640;border-radius:25px}.join h2{font-size:clamp(28px,5vw,43px);margin:0 0 10px}.join p{color:var(--muted);margin:0 auto 22px;max-width:600px;line-height:1.8}.join .btn{font-size:16px;padding:15px 28px}footer{border-top:1px solid var(--line);padding:24px 0;color:#858993;font-size:12px;margin-top:60px}.footerin{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.empty{display:none;text-align:center;color:var(--muted);padding:30px}
+@media(max-width:850px){.hero{grid-template-columns:1fr;padding:50px 0 25px}.heroart{height:310px}.ring{width:250px;height:250px}.citymark .skull{font-size:90px}.grid{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}.menu{display:block}.navlinks.open{display:flex;position:absolute;top:76px;right:4%;left:4%;padding:18px;background:#111317;flex-direction:column;border:1px solid var(--line);border-radius:14px}.sectionhead{align-items:start;flex-direction:column}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}.termgrid{grid-template-columns:1fr}.hero p{font-size:15px}.heroart{height:280px}.f1{right:0}.f2{left:0}.navin{height:68px}.navlinks.open{top:68px}h1{letter-spacing:-1px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap navin">
+<a class="brand" href="#home"><div class="logo">BC</div><div>BLACK CITY<span>ROLEPLAY WORLD</span></div></a>
+<div class="navlinks" id="navlinks"><a href="#home">الرئيسية</a><a href="#rules">قوانين Role Play</a><a href="#terms">مصطلحات المدينة</a><a href="#join">الانضمام</a></div>
+<button class="menu" id="menuBtn" aria-label="فتح القائمة">☰ القائمة</button>
+</div></nav>
+<main id="home" class="wrap">
+<section class="hero">
+<div><div class="eyebrow"><span class="dot"></span> القوانين الرسمية للمدينة</div>
+<h1>WELCOME TO<br><em>BLACK CITY</em> RP</h1>
+<p>مدينة لها قوانينها، وكل قرار له عواقب. اقرأ القوانين وافهم مصطلحات المدينة قبل الدخول، والتزم بالرول بلاي لتحافظ على تجربة ممتعة وعادلة للجميع.</p>
+<div class="actions"><a class="btn primary" href="#rules">📜 استكشف القوانين <span>←</span></a><a class="btn secondary" href="https://discord.gg/cTb24WGfB" target="_blank" rel="noopener">🎮 انضم إلى المدينة</a></div>
+</div>
+<div class="heroart"><div class="ring"></div><div class="citymark"><div class="skull">💀</div><strong>BLACK CITY</strong><small>YOUR STORY. YOUR CITY.</small></div><div class="floating f1">⚠️ الالتزام بالقوانين واجب</div><div class="floating f2">🏙️ عِش السيناريو… ولا تكسر الرول بلاي</div></div>
+</section>
+<section class="section" id="rules">
+<div class="sectionhead"><div><h2>📜 قوانين <span style="color:var(--red2)">Role Play</span></h2><p>تقمّص الشخصية والتزم بمنطقية السيناريو داخل المدينة.</p></div><div class="count" id="ruleCount">22 قانون</div></div>
+<div class="tools"><input class="search" id="ruleSearch" placeholder="ابحث عن قانون… مثال: RDM أو الخطف" aria-label="البحث في القوانين"><button class="filter active" data-filter="all">الكل</button><button class="filter" data-filter="combat">العنف والمواجهات</button><button class="filter" data-filter="role">الرول بلاي</button><button class="filter" data-filter="conduct">السلوك والمخالفات</button></div>
+<div class="grid" id="rulesGrid"></div><div class="empty" id="rulesEmpty">لا توجد قوانين مطابقة لبحثك.</div>
+<div class="notice"><div style="font-size:24px">🛡️</div><div><b>ملاحظة إدارية</b><p>تُطبّق إدارة BLACK CITY RP العقوبات حسب تفاصيل كل موقف وتقدير الإدارة. يُرجى الرجوع إلى القوانين المعتمدة في ديسكورد عند وجود أي تحديث.</p></div></div>
+</section>
+<section class="section" id="terms">
+<div class="sectionhead"><div><h2>🗣️ مصطلحات المدينة</h2><p>استخدم المصطلحات التالية داخل السيناريو للحفاظ على أجواء الرول بلاي.</p></div><div class="count">قاموس المدينة</div></div>
+<div class="termgrid" id="termsGrid"></div>
+</section>
+<section class="section" id="join">
+<div class="join"><div class="eyebrow">🚨 أبواب المدينة مفتوحة</div><h2>مستعد تبدأ قصتك؟</h2><p>جهّز هويتك، افهم القوانين، وكن جزءًا من BLACK CITY RP. مكانك في المدينة مستنيك!</p><a class="btn primary" href="https://discord.gg/cTb24WGfB" target="_blank" rel="noopener">🔗 الانضمام للسيرفر</a></div>
+</section>
+</main>
+<footer><div class="wrap footerin"><span>© BLACK CITY RP — جميع الحقوق محفوظة</span><span>احترم القوانين • احترم اللاعبين • اصنع سيناريو يستحق الحكاية</span></div></footer>
+<script>
+const rules=[
+["Role Play","تقمّص الشخصية بكل أدوارها، وتصرف بما يناسب قصتها وظروفها داخل المدينة.","role"],
+["Meta gaming","استخدام معلومات حصلت عليها من خارج اللعبة وتطبيقها داخل اللعبة.","role"],
+["Power gaming","فرض أفعال على لاعب آخر دون إعطائه فرصة مناسبة للتفاعل، أو القيام بأفعال غير منطقية داخل السيناريو.","role"],
+["RDM","قتل لاعب دون سبب أو سيناريو منطقي يبرر ذلك.","combat"],
+["VDM","استخدام المركبة عمدًا لدهس اللاعبين أو التخريب دون مبرر مناسب داخل السيناريو.","combat"],
+["Fear RP","الالتزام بالخوف على حياتك والتصرف بواقعية عندما تكون مهددًا.","role"],
+["New Life Rule (NLR)","عند الوفاة، لا تستخدم تفاصيل المواجهة السابقة للعودة والانتقام؛ التزم بقاعدة النسيان المعتمدة في المدينة.","role"],
+["Combat Logging","الخروج من المدينة أثناء موقف لتجنب العقوبة أو عواقب السيناريو.","conduct"],
+["Spam","تكرار الرسائل أو الأصوات بشكل مزعج يؤثر على تجربة الآخرين.","conduct"],
+["Safe Zone","يُمنع القتال أو تنفيذ الأعمال الإجرامية داخل المناطق الآمنة.","combat"],
+["Revenge Kill","العودة للانتقام بعد الموت مباشرة دون سيناريو جديد ومبرر.","combat"],
+["TK","قتل أحد أفراد عصابتك أو إلحاق الضرر به دون مبرر مقبول داخل السيناريو.","combat"],
+["Green Zone","أماكن يُمنع فيها استخدام الأسلحة أو ممارسة العنف نهائيًا.","combat"],
+["Fail RP","مخالفة قوانين الرول بلاي أو التصرف بطريقة غير واقعية تكسر السيناريو.","role"],
+["Cop Baiting","استفزاز الشرطة دون سبب منطقي، فقط لجذب انتباهها أو جرّها للمطاردة.","conduct"],
+["SK","قتل اللاعبين عند نقطة إعادة الظهور (Respawn).","combat"],
+["Value of Life","تقدير حياتك وعدم التهور في المواقف الخطيرة؛ حياتك لها قيمة داخل السيناريو.","role"],
+["Red Zone","منطقة يُسمح فيها باستخدام الأسلحة وفق القواعد الخاصة بها.","combat"],
+["LTA","الخروج من اللعبة لتجنب فعل أو موقف، مثل القبض أو السيناريو أو الخطف.","conduct"],
+["Mixing","الخلط بين الكلام خارج اللعبة والكلام داخل اللعبة.","role"],
+["Hostage RP","يجب أن يكون للخطف سبب منطقي، مع التعامل مع الرهينة والتهديدات بواقعية.","role"],
+["Scamming Rules","يُمنع النصب بطرق غير واقعية أو خارج إطار الرول بلاي والقواعد المعتمدة.","conduct"],
+["Trolling","التخريب أو الاستفزاز دون هدف منطقي داخل الرول بلاي لإفساد تجربة الآخرين.","conduct"]
+];
+const terms=[
+["👮🏻‍♂️","المحكمة العليا","الإدارة / الأدمن"],
+["🚫","باند","سافر أو طُرد من المدينة"],
+["🌀","جلتش","سحر أسود"],
+["📻","الديسكورد","راديو خارجي"],
+["🎙️","مايكروفون","أحبال صوتية"],
+["🎬","معركة أو حدث","سيناريو"],
+["📱","جهازي","دماغي"],
+["🌡️","الفريمات","الحرارة"],
+["📺","استريم","عين أو تلفزيون"],
+["🏙️","السيرفر","المدينة"],
+["🆔️","الايدي","الهوية 💳"],
+["🌪️","إعصار","إعادة تشغيل السيرفر"]
+];
+const grid=document.getElementById('rulesGrid'), search=document.getElementById('ruleSearch');
+let filter='all';
+function renderRules(){const q=search.value.trim().toLowerCase();let visible=0;grid.innerHTML='';rules.forEach((r,i)=>{if((filter!=='all'&&r[2]!==filter)||!r[0].toLowerCase().includes(q)&&!r[1].toLowerCase().includes(q))return;visible++;const el=document.createElement('article');el.className='card';el.innerHTML=`<div class="cardtop"><h3>${r[0]}</h3><span class="tag">${String(i+1).padStart(2,'0')} / RULE</span></div><p>${r[1]}</p>`;grid.appendChild(el)});document.getElementById('ruleCount').textContent=`${visible} قانون`;document.getElementById('rulesEmpty').style.display=visible?'none':'block'}
+search.addEventListener('input',renderRules);
+document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;renderRules()}));
+const termsGrid=document.getElementById('termsGrid');
+terms.forEach(t=>{const el=document.createElement('div');el.className='term';el.innerHTML=`<div class="termicon">${t[0]}</div><div><strong>${t[1]}</strong><span>»» ${t[2]}</span></div>`;termsGrid.appendChild(el)});
+document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('navlinks').classList.toggle('open'));
+document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
+renderRules();
+</script>
+</body></html>
